@@ -1,7 +1,7 @@
 # Vite React Typescript i18n
 VRTN is Vite React Typescript i18n template
 
-[Live Demo](https://vite-react-typescript-i18n-template.vercel.app/)
+[Live Demo](https://resume-ruby-rho.vercel.app/)
 
 ## 🚀 Features
 
