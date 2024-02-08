@@ -1,4 +1,12 @@
 menu:
-  example: 예제
+  example: 코딩테스트
+  study: 공부
   about: About
   todo: 할 일
+home:
+  title: 현재에 안주하지 않는 개발자
+  subtitle: 유형우 입니다.
+  content: |
+    항상 끊임없는 노력과 공부를 하며 프론트엔드 개발을 하고 있는 유형우 입니다.<br />
+    새로운 기술에 대해 항상 흥미와 관심을 보이며 무엇이든 먼저 해보는 성격입니다.<br />
+    주로 Vue.js를 사용하며 개발하며 언어는 JavaScript, TypeScript 등을 사용하고 있습니다.

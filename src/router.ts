@@ -69,7 +69,8 @@ export type Path =
   | `/example/typography/muted`
   | `/example/typography/p`
   | `/example/typography/small`
-  | `/example/typography/table`;
+  | `/example/typography/table`
+  | `/study`;
 
 export type Params = {};
 

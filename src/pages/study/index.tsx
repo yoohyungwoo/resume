@@ -5,7 +5,7 @@ export default function Index() {
 
   return (
     <main className="flex">
-      <p>{t('menu.example')}</p>
+      <p>{t('menu.study')}</p>
     </main>
   );
 }

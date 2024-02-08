@@ -103,7 +103,7 @@ const itemList = [
 export default function Examples() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [path, setPath] = useState(location.pathname);
+  const [, setPath] = useState(location.pathname);
   const handleListItemClick = (item: { name: string; path: string }) => {
     navigate(item.path);
     setPath(item.path);
