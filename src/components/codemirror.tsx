@@ -9,8 +9,6 @@ export default function CodeMirror() {
         theme: 'material',
         lineNumbers: true,
       }}
-      onChange={(editor, data, value) => {
-      }}
     />
   );
 }

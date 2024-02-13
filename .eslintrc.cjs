@@ -27,6 +27,7 @@ module.exports = {
   },
   plugins: ['react-refresh'],
   rules: {
+    "no-console": "off",
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/jsx-filename-extension': 0,
     'react/react-in-jsx-scope': 0,

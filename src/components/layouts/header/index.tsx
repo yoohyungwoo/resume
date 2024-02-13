@@ -19,7 +19,7 @@ function Header() {
           <MobileMenu menuItems={mobileMenuItems} />
         </div>
         <Link to="/" className="text-xl w-96 font-semibold flex items-center">
-          <img className="w-10 mr-1 rounded-full" alt="iPhone_01" src="/public/yoohyungwoo.jpeg" />
+          <img className="w-10 mr-1 rounded-full" alt="iPhone_01" src="/yoohyungwoo.jpeg" />
           {t('project.title')}
         </Link>
         <div className="hidden grow basis-full sm:block">

@@ -24,6 +24,7 @@ export type Path =
   | `/example/input/with-label`
   | `/example/input/with-text`
   | `/example/label/demo`
+  | `/example/markdown/editor`
   | `/example/menubar/demo`
   | `/example/navigation-menu/demo`
   | `/example/popover/demo`
@@ -70,7 +71,8 @@ export type Path =
   | `/example/typography/p`
   | `/example/typography/small`
   | `/example/typography/table`
-  | `/study`;
+  | `/study`
+  | `/study/vue/life-cycle`;
 
 export type Params = {};
 
