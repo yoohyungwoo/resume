@@ -5,6 +5,7 @@ import ToggleLanguage from '@components/layouts/header/toggleLanguage.tsx';
 import ToggleDark from '@components/layouts/header/toggleDark.tsx';
 import { useTranslation } from 'react-i18next';
 import Study from '@components/layouts/header/study.tsx';
+import { Avatar, AvatarFallback, AvatarImage } from '@components/ui/avatar.tsx';
 
 function Header() {
   const { t } = useTranslation();
@@ -18,14 +19,20 @@ function Header() {
         <div className="sm:hidden">
           <MobileMenu menuItems={mobileMenuItems} />
         </div>
-        <Link to="/" className="text-xl w-96 font-semibold flex items-center">
-          <img className="w-10 mr-1 rounded-full" alt="iPhone_01" src="/yoohyungwoo.jpeg" />
-          {t('project.title')}
-        </Link>
+        <div className="flex gap-2">
+          <Avatar>
+            <AvatarImage src="/yoohyungwoo.jpeg" />
+            <AvatarFallback>VC</AvatarFallback>
+          </Avatar>
+          <Link to="/" className="text-xl w-96 font-semibold flex items-center">
+            {t('project.title')}
+          </Link>
+        </div>
+
         <div className="hidden grow basis-full sm:block">
           <Study studyItems={studyItems} />
         </div>
-        <div className="hidden grow basis-40 sm:block">
+        <div className="hidden grow basis-48 sm:block">
           <Menu menuItems={menuItems} />
         </div>
         <div className="flex items-center justify-end sm:px-10">
