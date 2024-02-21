@@ -1,5 +1,9 @@
-const code-mirror = () => {
+import ReactCodeMirror from '@uiw/react-codemirror';
 
+function CodeMirror() {
+  return (
+    <ReactCodeMirror />
+  );
 }
 
-export default code-mirror
+export default CodeMirror;

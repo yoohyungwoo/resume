@@ -5,10 +5,14 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import UnoCSS from 'unocss/vite';
 import UnocssIcons from '@unocss/preset-icons';
 import generouted from '@generouted/react-router/plugin';
+import Markdown from 'vite-plugin-md';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    Markdown(),
+    react({
+      include: [/\.tsx$/, /\.md$/], // .tsx, .ts, .jsx, .md 파일 포함
+    }),
     generouted(),
     tsconfigPaths(),
     UnoCSS({
@@ -33,5 +37,5 @@ export default defineConfig({
       '@components/': `${path.resolve(__dirname, 'src/components')}/`,
     },
   },
-  assetsInclude: ['**/*.yml'],
+  assetsInclude: ['**/*.yml', '**/*.md'],
 });

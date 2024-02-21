@@ -1,10 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import Examples from '@components/examples.tsx';
+import ScrollList from '@components/scroll-list.tsx';
+import { studyLists } from '@components/scrollMenuListst.ts';
 
 export default function Study() {
   return (
     <main className="flex">
-      <Examples />
+      <ScrollList list={studyLists} />
       <div className="container">
         <Outlet />
       </div>

@@ -1,10 +1,12 @@
 import Markdown from '@components/markdown.tsx';
+import { useState } from 'react';
+// import request from '~/lib/request.ts';
 
 export default function LifeCycle() {
-  const test2:string = '### tets\n test';
+  const [markdown] = useState('### test');
   return (
     <div className="container">
-      <Markdown markdownSource={test2} />
+      <Markdown markdownSource={markdown} />
     </div>
   );
 }
