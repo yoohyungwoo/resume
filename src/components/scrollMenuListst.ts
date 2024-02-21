@@ -1,9 +1,4 @@
-import { useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-import { ScrollArea } from '@components/ui/scroll-area.tsx';
-import { Separator } from '@components/ui/separator.tsx';
-
-const itemList = [
+const exampleList = [
   { name: '/example/command/combobox', path: '/example/command/combobox' },
   { name: '/example/command/demo', path: '/example/command/demo' },
   { name: '/example/command/dialog', path: '/example/command/dialog' },
@@ -99,35 +94,8 @@ const itemList = [
   { name: '/example/typography/small', path: '/example/typography/small' },
   { name: '/example/typography/table', path: '/example/typography/table' },
   { name: '/example/markdown/editor', path: '/example/markdown/editor' },
-  { name: '/study/vue/life-cycle', path: '/study/vue/life-cycle' },
 ];
-
-export default function Examples() {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const [, setPath] = useState(location.pathname);
-  const handleListItemClick = (item: { name: string; path: string }) => {
-    navigate(item.path);
-    setPath(item.path);
-  };
-
-  return (
-    <ScrollArea className="h-96 w-80 rounded-md border">
-      <div className="p-4">
-        {itemList.map((item) => (
-          <div
-            key={`example-path-key-${item.path}}`}
-          >
-            <div
-              className="cursor-pointer text-sm"
-              onClick={() => handleListItemClick(item)}
-            >
-              {item.name}
-            </div>
-            <Separator className="my-2" />
-          </div>
-        ))}
-      </div>
-    </ScrollArea>
-  );
-}
+const studyLists = [
+  { name: 'Vue Life-Cycle', path: '/study/vue/life-cycle' },
+];
+export { exampleList, studyLists };

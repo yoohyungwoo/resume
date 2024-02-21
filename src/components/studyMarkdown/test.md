@@ -4,7 +4,7 @@
 
 어떤 Vue 인스턴스나 컴포넌트가 생성될 때, 미리 사전에 정의된 몇 단계의 과정을 거치게 되는데 이를 라이프사이클(Lifecycle)이라 합니다. 다시 말해 Vue 인스턴스가 생성된 후 우리 눈에 보여지고, 사라지기까지의 단계를 일컫는 말이다.
 
-![VueLifeCycle.png](..%2F..%2F..%2Fpublic%2Fimg%2FVueLifeCycle.png)
+![VueLifeCycle.png](..%2Fimg%2FVueLifeCycle.png)
 
 Vue 인스턴스는 크게 생성(create)되고, DOM에 부착(mount)되고, 업데이트(update)되며, 없어지는(destory) 4가지 과정을 거치게 됩니다.
 
