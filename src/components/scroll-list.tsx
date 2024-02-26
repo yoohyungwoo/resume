@@ -22,7 +22,7 @@ export default function ScrollList({ list }: IProps) {
   return (
     <ScrollArea className="h-96 w-80 rounded-md border">
       <div className="p-4">
-        {list.map((item) => (
+        {list.map((item, index) => (
           <div
             key={`example-path-key-${item.name}}`}
           >
@@ -32,7 +32,7 @@ export default function ScrollList({ list }: IProps) {
             >
               {item.name}
             </div>
-            <Separator className="my-2" />
+            { index !== list.length - 1 ? <Separator className="my-2" /> : ''}
           </div>
         ))}
       </div>

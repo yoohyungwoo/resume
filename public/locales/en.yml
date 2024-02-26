@@ -2,12 +2,13 @@ project:
   title: YooHyungwoo resume
 menu:
   example: CodingTest
+  coding: CodingTest
   study: Study
   about: About
   todo: To-Do
 home:
   title: Developers who don't settle for the status quo
-  subtitle: YooHyungwoo
+  subtitle: Hyungwoo
   content: |
-    My name is Hyungwoo, a front-end developer who always studies hard and improves.
+    My name is Hyungwoo, a front-end developer who always studies hard and improves.<br />
     I am always interested and excited about new technologies and try everything first.

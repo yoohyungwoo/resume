@@ -98,3 +98,7 @@ export const exampleList = [
 export const studyLists = [
   { name: 'Vue Life-Cycle', path: '/study/vue/life-cycle' },
 ];
+
+export const codingLists = [
+  { name: 'test', path: '/coding-test/test' },
+];

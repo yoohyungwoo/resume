@@ -4,14 +4,14 @@ import MobileMenu from '@components/layouts/header/mobileMenu.tsx';
 import ToggleLanguage from '@components/layouts/header/toggleLanguage.tsx';
 import ToggleDark from '@components/layouts/header/toggleDark.tsx';
 import { useTranslation } from 'react-i18next';
-import Study from '@components/layouts/header/study.tsx';
 import { Avatar, AvatarFallback, AvatarImage } from '@components/ui/avatar.tsx';
 
 function Header() {
   const { t } = useTranslation();
 
-  const mobileMenuItems = [{ path: '/example', name: t('menu.example') }, { path: '/study', name: t('menu.study') }];
+  const mobileMenuItems = [{ path: '/example', name: t('menu.example') }, { path: '/study', name: t('menu.study') }, { path: '/coding-test', name: t('menu.coding') }];
   const menuItems = [{ path: '/example', name: t('menu.example') }];
+  const codingItems = [{ path: '/coding-test', name: t('menu.coding') }];
   const studyItems = [{ path: '/study', name: t('menu.study') }];
   return (
     <header className="z-50 flex w-full flex-wrap justify-start py-4 text-sm ">
@@ -30,9 +30,12 @@ function Header() {
         </div>
 
         <div className="hidden grow basis-full sm:block">
-          <Study studyItems={studyItems} />
+          <Menu menuItems={codingItems} />
         </div>
-        <div className="hidden grow basis-48 sm:block">
+        <div className="hidden grow basis-40 sm:block">
+          <Menu menuItems={studyItems} />
+        </div>
+        <div className="hidden grow basis-40 sm:block">
           <Menu menuItems={menuItems} />
         </div>
         <div className="flex items-center justify-end sm:px-10">
